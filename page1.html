@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page1.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="anim-btn" id="block">
+            <div class="title">
+                <img src="img/title2.png" alt="">
+            </div>
+            <div class="btn" id="bouton">
+                <a class="enter" href="page1.html">JOUER</a>
+            </div>
+        </div>
+    </section>
+    <section class="formulaire">
+        <div class="overlay"></div>
+        <div class="logo">
+            <img src="img/title2.png" alt="">
+        </div>
+        <div class="form">
+            <form id="create-character-form" action="page2.html" method="get">
+                <div class="tab">
+                    <div class=nom>
+                        <label for="name"> Nom de personnage</label>
+                        <input id="character-name" name="name" type="text" placeholder="entrez votre pseudo" required>
+                    </div>
+                    <div class="pv">
+                        <label for="life"> nombre de PV (min 30 et max 40)</label>
+                        <input name="life" type="number" min="30" max="40" value="30" required>
+                    </div>
+                </div>
+
+                <div class="perso">
+                    <div class="guerrier">
+                        <img src="img/Perso/Guerrier.png" alt="">
+                        <div class="circle"></div>
+                        <div class="circle2"></div>
+                        <div class="shiny1">
+                            <img src="img/shiny-perso.png" alt="">
+                        </div>
+                        <div class="ond1"></div>
+                        <div class="btn">
+                            <input type="submit" value="Guerrier">
+                        </div>
+                    </div>
+                    <div class="magicien">
+                        <img src="img/Perso/magicien.png" alt="">
+                        <div class="circle"></div>
+                        <div class="circle3"></div>
+                        <div class="shiny2">
+                            <img src="img/shiny-perso.png" alt="">
+                        </div>
+                        <div class="ond2"></div>
+                        <div class="btn">
+                            <input type="submit" value="Magicien">
+                        </div>
+                    </div>
+                    <div class="elfe">
+                        <img src="img/Perso/Elfe.png" alt="">
+                        <div class="circle"></div>
+                        <div class="circle4"></div>
+                        <div class="shiny3">
+                            <img src="img/shiny-perso.png" alt="">
+                        </div>
+                        <div class="ond3"></div>
+                        <div class="btn">
+                            <input type="submit" value="Elfe">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+/*INDEX*/
+
+.title {
+    text-align: center;
+    transform: scale(70%);
+}
+
+.title img {
+    margin-top: 6em;
+}
+
+.btn {
+    transform: translateY(-10px);
+    width: max-content;
+    margin: auto;
+    text-align: center;
+}
+
+.enter {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2.3em;
+    background: linear-gradient(#D34C00, #FFA903);
+    border: 1px solid rgba(255, 255, 255, 0.123);
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.6);
+    border-radius: 20px;
+    padding: .5em 1.5em;
+    margin-top: 3em;
+    transition: 0.2s ease-in-out;
+}
+
+.container {
+    position: absolute;
+    z-index: 2;
+    right: 5%;
+    animation-name: anim8;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes anim8 {
+    0% {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 0%;
+    }
+
+    90% {
+        transform: translateY(-300px);
+        opacity: 0%;
+    }
+
+    100% {
+        transform: translateY(-1000px);
+        opacity: 0%;
+    }
+}
+
+/* PAGE1 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formulaire {
+    background-image: url('img/img-fond.png');
+    background-size: cover;
+    background-size: 100%;
+    background-position-y: 100%;
+    height: calc(100vh);
+    display: block;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    animation-name: anim4;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes anim4 {
+    from {
+        background-position-y: 0%;
+        background-position: center center;
+    }
+
+    to {
+        background-position-y: 100%;
+    }
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0, 12, 44, 0.623);
+    background-blend-mode: color-burn;
+    z-index: 0;
+    animation-name: anim5;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes anim5 {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.logo img {
+    top: 6%;
+    right: 81%;
+    width: 20%;
+    position: absolute;
+    z-index: +1;
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes anim2 {
+    from {
+        transform: translateY(200px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+.form {
+    position: relative;
+    color: white;
+    text-shadow: -2px 2px 0px black;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2em;
+    margin: 0 10em;
+    padding-top: 5em;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes anim1 {
+    from {
+        transform: translateY(200px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+.tab input, .tab select {
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.096);
+    width: 50%;
+}
+
+.nom, .classe, .pv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.btn {
+    filter: brightness(80%);
+    transition: 0.2s ease-in-out;
+}
+
+.btn input {
+    color: white;
+    background: linear-gradient(#D34C00, #FFA903);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.096);
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.6);
+    padding: 0.5em 1.5em;
+    font-size: 1em;
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: 1em;
+    transition: 0.2s ease-in-out;
+    animation-name: anim3;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes anim3 {
+    from {
+        transform: translateY(30px);
+        opacity: 0%;
+    }
+
+    to {
+        transform: translateY(0px);
+        opacity: 100%;
+    }
+}
+
+.btn input:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.6);
+}
+
+.perso {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1.5em 0 1.5em 0;
+    /*border: 14px ridge #a48600;
+    background-color: rgb(17, 26, 41);*/
+    margin: auto;
+}
+
+.perso img {
+    width: 40%;
+}
+
+.circle {
+    opacity: 0%;
+    filter: blur(80px);
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    right: 15%;
+    width: 300px;
+    height: 300px;
+    background-color: rgb(255, 241, 201);
+    border-radius: 800px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.guerrier img, .magicien img, .elfe img {
+    transition: 0.2s ease-in-out;
+    filter: brightness(100%);
+}
+
+.guerrier:hover img, .magicien:hover img, .elfe:hover img {
+    filter: brightness(120%);
+}
+
+.guerrier:hover .btn, .magicien:hover .btn, .elfe:hover .btn {
+    filter: brightness(100%);
+}
+
+.guerrier, .magicien, .elfe {
+    position: relative;
+    z-index: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.guerrier:hover, .magicien:hover, .elfe:hover {
+    transform: scale(110%);
+    filter: brightness(100%);
+}
+
+.guerrier:hover .circle, .magicien:hover .circle, .elfe:hover .circle {
+    opacity: 100%;
+}
+
+.circle2, .circle3, .circle4 {
+    position: absolute;
+    z-index: -1;
+    filter: blur(10px);
+    transform: scale(0.6, 0.1);
+    width: 300px;
+    height: 300px;
+    border-radius: 800px;
+    transition: 0.2s ease-in-out;
+}
+
+.guerrier:hover .circle2, .magicien:hover .circle3, .elfe:hover .circle4 {
+    opacity: 100%;
+    background-color: rgb(255, 235, 205);
+    filter: blur(40px);
+}
+
+.circle2 {
+    top: 25.5%;
+    right: 13%;
+    background-color: rgb(134, 131, 125);
+}
+
+.circle3 {
+    top: 25%;
+    right: 10%;
+    background-color: rgb(134, 112, 79);
+}
+
+.circle4 {
+    top: 23%;
+    right: 16%;
+    background-color: rgb(92, 107, 57);
+}
+
+.ond1, .ond2, .ond3 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0%;
+    filter: blur(10px);
+    transform: scale(0.6, 0.1);
+    width: 300px;
+    height: 300px;
+    border: 20px solid rgba(255, 235, 205, 0.815);
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 800px;
+    transition: 0.2s ease-in-out;
+}
+
+.ond1 {
+    top: 26.5%;
+    right: 13%;
+}
+
+.ond2 {
+    top: 26%;
+    right: 10%;
+}
+
+.ond3 {
+    top: 24%;
+    right: 16%;
+}
+
+.guerrier:hover .ond1, .magicien:hover .ond2, .elfe:hover .ond3 {
+    opacity: 100%;
+    animation-name: animond;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+@keyframes animond {
+    0% {
+        transform: scale(0.3, 0);
+        opacity: 0%;
+    }
+
+    50% {
+        opacity: 100%;
+    }
+
+    100% {
+        transform: scale(1.5, 0.2);
+        opacity: 0%;
+    }
+}
+
+.shiny1 img, .shiny2 img, .shiny3 img {
+    position: absolute;
+    z-index: -1;
+    width: 15em;
+    opacity: 0%;
+    animation-name: shinyperso;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: initial;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+}
+
+@keyframes shinyperso {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.shiny1 img {
+    top: -35%;
+    right: -5%;
+}
+
+.shiny2 img {
+    top: -35%;
+    right: -12%;
+}
+
+.shiny3 img {
+    top: -35%;
+    right: -2%;
+}
+
+.guerrier:hover .shiny1 img, .magicien:hover .shiny2 img, .elfe:hover .shiny3 img {
+    opacity: 100%;
+}

@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.tab {
+    background-image: url('img/img-fond.png');
+    background-size: cover;
+    background-size: 100%;
+    background-position-y: 100%;
+    background-position: center center;
+    height: calc(100vh);
+    display: block;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes anim2 {
+    0% {
+        background-position: center;
+        background-size: 100%;
+        background-position-y: 100%;
+    }
+
+    30% {
+        background-position: top;
+    }
+
+    100% {
+        background-size: 250%;
+        background-position: 50% 20%;
+    }
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(img/cloud/77\ 2.png);
+    background-position: top;
+    z-index: 0;
+    animation-name: anim5;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes anim5 {
+    0% {
+        opacity: 0%;
+        background-size: 100%;
+        filter: blur(100px);
+    }
+
+    100% {
+        opacity: 100%;
+        background-size: 230%;
+        filter: blur(0px);
+        background-position: center;
+    }
+}
+
+.overlay2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0, 12, 44, 0.623);
+    background-blend-mode: color-burn;
+    background-position: top;
+    z-index: 0;
+    animation-name: anim15;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes anim15 {
+    0% {
+        opacity: 100%;
+        background-size: 230%;
+        background-position: center;
+    }
+
+    100% {
+        opacity: 0%;
+        background-size: 100%;
+    }
+}
+
+.cloud1 img {
+    position: absolute;
+    z-index: 2;
+    filter: blur(5px);
+    animation-name: cloud1;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes cloud1 {
+    0% {
+        opacity: 0%;
+        top: 80%;
+        right: 50%;
+        width: 2em;
+        filter: blur(50px);
+    }
+
+    20% {
+        opacity: 0%;
+        top: 80%;
+        right: 50%;
+        width: 2em;
+        filter: blur(50px);
+    }
+
+    100% {
+        top: 75%;
+        right: 50%;
+        width: 80em;
+        opacity: 100%;
+        filter: blur(5px);
+    }
+}
+
+.cloud2 img {
+    position: absolute;
+    z-index: 3;
+    filter: blur(5px);
+    animation-name: cloud2;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes cloud2 {
+    0% {
+        opacity: 0%;
+        top: 60%;
+        right: 50%;
+        width: 2em;
+        filter: blur(30px);
+    }
+
+    10% {
+        opacity: 0%;
+    }
+
+    100% {
+        top: 75%;
+        right: -10%;
+        width: 50em;
+        opacity: 100%;
+        filter: blur(5px);
+    }
+}
+
+.cloud3 img {
+    position: absolute;
+    z-index: 1;
+    filter: blur(2px);
+    animation-name: cloud3;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes cloud3 {
+    0% {
+        opacity: 0%;
+        top: 60%;
+        right: 50%;
+        width: 2em;
+        filter: blur(20px);
+    }
+
+    15% {
+        opacity: 0%;
+    }
+
+    100% {
+        top: 50%;
+        right: 80%;
+        width: 35em;
+        opacity: 100%;
+        filter: blur(2px);
+    }
+}
+
+.cloud4 img {
+    position: absolute;
+    z-index: 1;
+    filter: blur(2px);
+    animation-name: cloud4;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes cloud4 {
+    0% {
+        opacity: 0%;
+        top: 60%;
+        right: 45%;
+        width: 2em;
+        filter: blur(20px);
+    }
+
+    15% {
+        opacity: 0%;
+        top: 60%;
+        right: 45%;
+        width: 2em;
+        filter: blur(20px);
+    }
+
+    30% {
+        opacity: 0%;
+    }
+
+    100% {
+        top: 63%;
+        right: 70%;
+        width: 50em;
+        opacity: 100%;
+        filter: blur(5px);
+    }
+}
+
+.cloud5 img {
+    position: absolute;
+    z-index: 2;
+    filter: blur(2px);
+    animation-name: cloud5;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes cloud5 {
+    0% {
+        opacity: 0%;
+        top: 70%;
+        right: 50%;
+        width: 2em;
+        filter: blur(20px);
+    }
+
+    20% {
+        opacity: 0%;
+    }
+
+    100% {
+        top: 60%;
+        right: -15%;
+        width: 35em;
+        opacity: 100%;
+        filter: blur(5px);
+    }
+}
+
+.cloud6 img {
+    position: absolute;
+    z-index: 1;
+    filter: blur(2px);
+    animation-name: cloud6;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes cloud6 {
+    0% {
+        opacity: 0%;
+        top: 80%;
+        right: 50%;
+        width: 2em;
+        filter: blur(50px);
+    }
+
+    20% {
+        opacity: 0%;
+        top: 80%;
+        right: 50%;
+        width: 2em;
+        filter: blur(50px);
+    }
+
+    100% {
+        top: 80%;
+        right: 25%;
+        width: 35em;
+        opacity: 100%;
+        filter: blur(1px);
+    }
+}
+
+
+.logo img {
+    top: 6%;
+    right: 81%;
+    width: 20%;
+    position: absolute;
+    z-index: +1;
+}
+
+.choix {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8em;
+    padding-top: 5em;
+    animation-name: choix;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes choix {
+    0% {
+        opacity: 0%;
+        transform: scale(20%) translateY(400px);
+    }
+
+    40% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: scale(100%) translateY(0px);
+    }
+}
+
+.arene1, .arene2 {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 30em;
+    height: 20em;
+    border-radius: 15px;
+    transform: scale(90%);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.295);
+    transition: 0.5s ease-in-out;
+}
+
+.arene1:hover, .arene2:hover {
+    transform: scale(100%);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.233);
+}
+
+.arene1 img, .arene2 img {
+    width: 33em;
+    transform: scale(105%);
+    transition: 0.5s ease-in-out;
+}
+
+.arene1:hover img, .arene2:hover img {
+    transform: scale(100%);
+}
+
+.shiny {
+    position: absolute;
+    z-index: 5;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.144));
+    filter: blur(5px);
+    width: 500px;
+    height: 800px;
+    transform: rotate(20deg) translateY(-20%) translateX(-650px);
+    transition: 0.5s ease-in-out;
+    animation-name: shiny;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: backwards;
+    animation-delay: 0.8s;
+}
+
+@keyframes shiny {
+    0% {
+        transform: rotate(20deg) translateY(-20%) translateX(300px);
+    }
+
+    100% {
+        transform: rotate(20deg) translateY(-20%) translateX(-650px);
+    }
+}
+
+
+.arene1:hover .shiny, .arene2:hover .shiny {
+    transform: rotate(20deg) translateY(-20%) translateX(300px);
+}
+
+.title {
+    color: white;
+    text-shadow: -2px 2px 0px black;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 2em;
+    margin-top: 5em;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    animation-name: title;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    animation-direction: initial;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+    animation-delay: 0s;
+}
+
+@keyframes title {
+    0% {
+        opacity: 0%;
+        transform: scale(20%) translateY(400px);
+    }
+
+    40% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+        transform: scale(100%) translateY(0px);
+    }
+}
